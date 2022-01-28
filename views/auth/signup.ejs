@@ -1,6 +1,6 @@
 <%-include("../partials/header")%>
 <%-include("../partials/navbar")%>
-
+<%-include("../partials/logo")%>
 
 
 <main class="container">
@@ -9,6 +9,16 @@
             <%-include("../partials/flash")%>
             <h1 class="dispaly-6">Sign Up</h1> 
             <form action="/register" method="POST">
+                <!--<div class="mb-3 mt-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Personal Account</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Business Account</label>
+                      </div>
+                    </div>-->
             <div class="mb-3">
 <label for="name" class="form-label">Username</label>
 <input type="text" class="form-control" name="username" id="username" placeholder="Username">

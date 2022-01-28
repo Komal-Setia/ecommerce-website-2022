@@ -5,7 +5,7 @@ const Product=require('../models/product');
 const {isLoggedIn}=require('../middleware');
  
 
-//add items
+//add items into cart
 router.post('/cart/:productid/add',isLoggedIn,async (req,res)=>{
     const { productid } =req.params;
     const product=await Product.findById(productid);
@@ -16,12 +16,16 @@ router.post('/cart/:productid/add',isLoggedIn,async (req,res)=>{
     res.redirect(`/products/${productid}`);
 });
 
+
+//Show cart
 router.get('/user/cart',isLoggedIn,async(req,res)=>{
     const userid=req.user._id;
     const user=await User.findById(userid).populate('cart');
     res.render('cart/userCart',{user});
 });
 
+
+//Delete Items from cart
 router.delete('/cart/:id/remove',isLoggedIn,async (req,res)=>{
     const productid=req.params.id;
     const userid=req.user._id;

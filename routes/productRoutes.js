@@ -88,6 +88,7 @@ router.patch('/products/:id',isLoggedIn,async (req,res)=>{
     }
 });
 
+//Deleting the product
 router.delete('/products/:id',isLoggedIn,async(req,res)=>{
     try{
 const {id}=req.params;

@@ -27,7 +27,7 @@ app.set('views',path.join(__dirname,'views'));
 app.use(express.static(path.join(__dirname,'public')));
 app.use(express.urlencoded({extended:true}));
 app.use(methodOverride('_method'));
-
+app.use(express.static('public'));
 
 
 const sessionConfig={
@@ -51,6 +51,7 @@ app.use((req,res,next)=>{
     res.locals.success=req.flash('success');
     res.locals.error=req.flash('error');
     res.locals.currentUser=req.user;
+    res.locals.seller=req.user;
     next();
 });
 
@@ -60,7 +61,7 @@ const cartRoutes=require('./routes/cartRoutes');
 
 //endpoint
 app.get('/',(req,res)=>{
-    res.send('Home page');
+    res.render('home');
 })
 
 app.get('/error',(req,res)=>{

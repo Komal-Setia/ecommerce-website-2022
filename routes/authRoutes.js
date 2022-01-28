@@ -17,13 +17,15 @@ const User=require('../models/user');
 
 })*/
 
+
 //get the signUp page
 router.get('/register',(req,res)=>{
 
     res.render('auth/signup');
 });
 
-//sign up new user to the database
+
+//sign up/Register new user to the database
 router.post('/register',async (req,res)=>{
     try{
         const {username,email,password}=req.body;
@@ -41,6 +43,7 @@ router.post('/register',async (req,res)=>{
     }
     
 });
+
 
 //get the login page
 router.get('/login',(req,res)=>{
@@ -60,7 +63,7 @@ passport.authenticate('local',
     res.redirect('/products');
       });
 
-
+//Logout
 router.get('/logout',(req,res)=>{
     req.logout();
     req.flash('success','Logout Successfully!');

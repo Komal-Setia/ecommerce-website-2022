@@ -4,28 +4,55 @@ const Product=require('./models/product');
 
 const products=[
     {
-        name:'Iphone 11',
-        price:100,
-        desc:'The iPhone is a smartphone made by Apple that combines a computer, iPod, digital camera and cellular phone into one device with a touchscreen interface.',
-        img:'https://images.unsplash.com/photo-1539883305165-f691affc6c54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGlwYWR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'
+        name:'Apple iPhone 13 (128GB)',
+        price:70000,
+        desc:'15 cm (6.1-inch) Super Retina XDR display,Cinematic mode adds shallow depth of field and shifts focus automatically in your videos,Advanced dual-camera system with 12MP Wide',
+        img:'https://m.media-amazon.com/images/I/61l9ppRIiqL._SL1500_.jpg'
     },
     {
-        name:'Ipad',
-        price:100,
-        desc:'The iPhone is a smartphone made by Apple that combines a computer, iPod, digital camera and cellular phone into one device with a touchscreen interface.',
-        img:'https://images.unsplash.com/photo-1539883305165-f691affc6c54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGlwYWR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'
+        name:'Levi\'s Women\'s Skinny Fit Jeans',
+        price:1320,
+        desc:'Care Instructions: Machine Wash, Fit Type: Skinny, Red tab, Heavy Fade, Clean Look, plain, Machine Wash, Skinny,Warranty Type: Manufacturer & Seller,Warranty Description: 30 days',
+        img:'https://m.media-amazon.com/images/I/81mSbzR6r5L._UL1500_.jpg'
+
     },
     {
-        name:'Macbook',
-        price:100,
-        desc:'The iPhone is a smartphone made by Apple that combines a computer, iPod, digital camera and cellular phone into one device with a touchscreen interface.',
-        img:'https://images.unsplash.com/photo-1580522154071-c6ca47a859ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWFjYm9vayUyMHByb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+        name:'Gucci Intense Oud EDP',
+        price:17775,
+        desc:'This intense oud EDP has a refreshing fragrance, Top notes are incense, woody notes, Middle notes are leather, amber, Base notes are agarwood (oud) and olibanum, Gender: unisex, fragrance: balsamic',
+        img:"https://m.media-amazon.com/images/I/81Q4mBnkqbL._SL1500_.jpg"
     },
     {
-        name:'Airpod',
-        price:100,
-        desc:'The iPhone is a smartphone made by Apple that combines a computer, iPod, digital camera and cellular phone into one device with a touchscreen interface.',
-        img:'https://media.istockphoto.com/photos/modern-wireless-bluetooth-headphones-with-charging-case-on-a-blue-picture-id1346147559?b=1&k=20&m=1346147559&s=170667a&w=0&h=ofy428m_H-K6na3JpFded3U66TVsIp56D1Z6ffflkk0='
+        name:'2020 Apple iPad Air with A14 Bionic chip',
+        price:54900,
+        desc:'Stunning 27.69 cm (10.9-inch) Liquid Retina display with True Tone and P3 wide colour,A14 Bionic chip with Neural Engine,Touch ID for secure authentication,Wide stereo audio,Available in Silver, Space Grey, Rose Gold, Green and Sky Blue,Wi-Fi 6 (802.11ax),Up to 10 hours of battery life',
+        img:'https://m.media-amazon.com/images/I/71SAHzzQqkL._SL1500_.jpg'
+    },
+    {
+        name:'Nike Men\'s Runallday 2 Running Shoes',
+        price:5495,
+        desc:'Closure: Lace-Up,Shoe Width: Regular,Outer Material: Synthetic,Closure Type: Lace-Up,Toe Style: Round Toe,Warranty Type: Manufacturer & Seller,Warranty Description: 30 days',
+        img:"https://m.media-amazon.com/images/I/714Pt5LHG3L._UL1500_.jpg"
+        
+    },
+
+    {
+        name:'2021 Apple MacBook Pro',
+        price:194900,
+        desc:'Apple M1 Pro or M1 Max chip for a massive leap in CPU, GPU and machine learning performance,Up to 10-core CPU delivers up to 3.7x faster performance to fly through pro workflows quicker than ever,Up to 32-core GPU with up to 13x faster performance for graphics-intensive apps and games',
+        img:'https://m.media-amazon.com/images/I/61vFO3R5UNL._SL1500_.jpg'
+    },
+    {
+        name:'Raymond Weil Freelancer Analog Grey Dial Men\'s Watch-7730-STC-JHDX1',
+        price:198800,
+        desc:'Dial Color: Grey , Dial Shape: Round,Dial Material: Steel &, Grey PVD , Strap Material: Leather,Movement: Automatic , Watch Type: Analog, Glass Type: Sapphire Crystal , Water Resistance: 100,  Case Size: 42 mm , Clasp Type: Folding Clasp',
+        img:"https://m.media-amazon.com/images/I/610vwp16GqL._UL1000_.jpg"
+    },
+    {
+        name:'Apple AirPods Pro',
+        price:20900,
+        desc:'Active noise cancellation for immersive sound,Transparency mode for hearing and connecting with the world around you,Three sizes of soft, tapered silicone tips for a customisable fit, Sweat and water resistant,Adaptive EQ automatically tunes music to the shape of your ear',
+        img:'https://m.media-amazon.com/images/I/71zny7BTRlL._SL1500_.jpg'
     }
 ];
 
